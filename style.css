@@ -118,8 +118,10 @@ button{
     padding-bottom: 80px;
 }
 
-.section-2 h2{
+.section-2 .title{
     margin: 50px;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .square-image{
@@ -171,7 +173,43 @@ button{
 }
 
 /* section 4 */
+.section-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.blue-box{
+    flex-grow: 1;
+    height: 50%;
+    margin: 10%;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.section-4 button{
+    margin: 0;
+    border: 2px #e5e7eb solid;
+}
+
+.blue-box .title{
+    color: #e5e7eb;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.blue-box .message{
+    color: #f9faf8;
+    font-size: 18px;
+    /* font-weight: 700; */
+}
 
 /* footer */
 .footer{
