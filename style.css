@@ -85,6 +85,7 @@ ul{
     display: flex;
     color:#e5e7eb;
     font-size: 18px;
+    justify-content: space-around;
 }
 
 .presentation .main{
@@ -109,6 +110,41 @@ button{
 }
 
 /* section 2 */
+
+.section-2{
+    flex-basis: auto;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.section-2 h2{
+    margin: 50px;
+    /* font-weight: 900; */
+}
+
+.square-image{
+    width: 150px; 
+    height: 150px; 
+    border: 4px #3882f6 solid; 
+    border-radius: 10px;
+}
+
+
+.square-elements{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.element{
+    width: 200px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* section 3 */
 .section-3{
