@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px red solid; */
+    height: 100%;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    padding: 0px;
+}
+
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.footer{
+    flex: auto;
+}
+
+.section-1,
+.footer{
+    background-color: #1f2937;
+}
+
+
+.section-3{
+    background-color: #e5e7eb;
+}
+
+
+.footer{
+    flex: none;
+    flex-basis: 80px;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
