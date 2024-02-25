@@ -15,7 +15,7 @@ html{
 .section-2,
 .section-3,
 .section-4{
-    min-height: 400px;
+    /* min-height: 400px; */
 }
 
 .section-1,
@@ -23,7 +23,7 @@ html{
 .section-3,
 .section-4,
 .footer{
-    flex: auto;
+    flex: none;
 }
 
 .section-1,
@@ -34,7 +34,6 @@ html{
 
 /* section 1 - header*/
 .section-1{
-    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     padding: 0px 10%;
@@ -47,7 +46,6 @@ html{
 
 .header{
     display: flex;
-    /* flex: 1; */
     gap: 16px;
     justify-content: space-between;
     align-items: center;
@@ -113,6 +111,7 @@ button{
 /* section 2 */
 
 .section-2{
+    /* height: auto; */
     flex-basis: auto;
     text-align: center;
     padding-bottom: 80px;
@@ -135,6 +134,7 @@ button{
 .square-elements{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -150,9 +150,8 @@ button{
 
 /* section 3 */
 .section-3{
-    flex-basis: 800px;
     background-color: #e5e7eb;
-    padding: 0px 20%;
+    padding: 80px 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,6 +173,9 @@ button{
 
 /* section 4 */
 .section-4{
+    
+    height: 400px;
+    flex: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,35 +183,47 @@ button{
 
 .blue-box{
     flex-grow: 1;
-    height: 50%;
+    /* height: 50%; */
     margin: 10%;
     background-color: #3882f6;
     border-radius: 10px;
-    padding: 100px;
+    padding: 50px;
 
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    
     align-items: center;
-    gap: 50px;
+    align-content: center;
+
+    row-gap: 20px;
+    column-gap: 50px;;
     box-sizing: border-box;
 }
 
 .section-4 button{
     margin: 0;
     border: 2px #e5e7eb solid;
+    flex-grow: 1;
+}
+
+.blue-box .text{
+    flex-grow: 100;
 }
 
 .blue-box .title{
     color: #e5e7eb;
     font-size: 30px;
     font-weight: 700;
+    flex-grow: 1;
 }
 
 .blue-box .message{
     color: #f9faf8;
     font-size: 18px;
+    flex-grow: 1;
     /* font-weight: 700; */
 }
+
 
 /* footer */
 .footer{
